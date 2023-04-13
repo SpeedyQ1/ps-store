@@ -5,7 +5,19 @@
     top: 0vh;
     z-index: 1;
     border-radius: 20px;
- 
+    animation-name: nav-animation;
+    animation-duration: 1.5s;
+ }
+ @keyframes nav-animation{
+    from{
+       opacity: 0%;
+       width: 0px;
+     }
+
+    to{
+       opacity: 100%;
+       width: 100%;
+    }
  }
  .nav-button{
      display: flex;
@@ -31,7 +43,7 @@
      cursor: pointer;
  }
  
- #cart-icon{
+  #cart-icon{
      display: block;
      width: 15px;
      height: 16px;
@@ -63,3 +75,5 @@
     #nav-cart-page:hover .page-title{
         color: black;
     }
+
+   

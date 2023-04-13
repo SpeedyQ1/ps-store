@@ -1,6 +1,4 @@
-*{
-    box-sizing: border-box;
-}
+
 body{
     height: 100vh;
     margin: 0%;
@@ -51,6 +49,7 @@ box-sizing: border-box;
     justify-content: center;
     animation-name: top-section-animation;
     animation-duration: 2s;
+    margin-top: 35px;
 }
 
 @keyframes top-section-animation{

@@ -1,0 +1,285 @@
+
+body{
+    height: 100vh;
+    margin: 0%;
+    background-image: url('https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-54587.jpg');
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.page-title{
+    padding: 7px;
+    color: white;
+    margin: 3px;
+}
+
+.page-title:hover{
+color: black;
+}
+
+
+.game-discription{
+width: 95%;
+height: auto;
+color: white;
+border-width: 3px;
+border-color: rgb(255, 255, 255);
+border-style: solid;
+border-radius: 5px;
+padding: 35px;
+flex-direction: row;
+text-align: center;
+box-sizing: border-box;
+}
+
+.game-preview{
+    display: flex;
+    margin-top: 10px;
+   height: fit-content;
+   background-color: rgba(0, 0, 0, 0.449);
+   padding-bottom: 20px;
+   flex-direction: column;
+}
+
+#top-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    animation-name: top-section-animation;
+    animation-duration: 2s;
+}
+
+@keyframes top-section-animation{
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 100%;
+    }
+ }
+
+#bottom-section{
+   display: flex;
+   justify-content: center;
+}
+.info{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: rgb(29,31,35);
+    height: fit-content;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 10px;
+    align-items: center;
+}
+
+.game-name-title{
+    width: fit-content;
+    color: white;
+   
+}
+
+iframe{
+    
+    margin-top: 20px;
+    border-style: solid;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+.tags{
+    margin: 0%;
+    background-color: rgb(107, 114, 128);
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 10px;
+    width: fit-content;
+
+ }
+
+ .tags:hover{
+    background-color: rgb(164, 176, 200);
+
+ }
+
+ #name-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ }
+
+ #tags-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+ }
+
+ #add-to-cart{
+    margin: 0%;
+    margin-right: 5px;
+
+ }
+ #buy{
+    display: flex;
+    color: white;
+    margin: 0%;
+    margin-top: 5px;
+    background-color: rgb(214,61,3);
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    width: fit-content;
+    align-items: center;
+    cursor: pointer;
+  }
+
+ #buy:hover{
+    background-color: rgb(255, 115, 65);
+    
+ }
+
+ 
+ .icon{
+    display: block;
+    width: 15px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #cart-icon{
+      background-image: url("./icon-cart.svg");
+  }
+
+  .game-pic{
+    width: 260px;
+    height: auto;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+   }
+    .game-card{
+        height: 315px;
+        width: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+        background-color: rgb(29,31,35);
+        padding: 10px;
+        border-radius: 20px;
+        border-style: solid;
+        margin-right: 20px;
+        
+        
+   }
+
+   .game-price{
+    margin: 0%;
+    background-color: rgb(255, 115, 65);
+    border-width: 3px;
+    color: white;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+ }
+
+ #trailer-section{
+    display: flex;
+    justify-content: center;
+ }
+#mid-section{
+    display: flex;
+    justify-content: center;
+}
+
+ .ingame-pic-section{
+    padding: 10px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 3px;
+    background-color: rgb(29,31,35);
+    margin: 10px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+.big-pic-section{
+    width: 90%;
+    height: auto;
+    margin: 10px;
+}
+.big-pic-section img{
+    width: 100%;
+}
+
+.samall-pic-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+     
+}
+.samall-pic-section img {
+    opacity: .6;
+    
+    }
+.samall-pic-section img:hover {
+opacity: 1;
+}
+
+
+
+.small-pic{
+    width: 25%;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+
+ @media screen and (max-width: 768px){
+    #top-section{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    iframe{
+        width: 85vw;
+        height: auto;
+        margin-left: 0px;
+
+    }
+
+    .game-card{
+        width: 90vw;
+        height: auto;
+        margin-right: 0px;
+
+    }
+    .game-pic{
+        width: 92%;
+        height: auto;
+    }
+
+    h3{
+        font-size: 1.17em;
+    }
+ }
+
+ 

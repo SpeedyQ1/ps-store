@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>God Of War</title>
+    <link rel="stylesheet" type="text/CSS" href="page-of-the-game.css" />
+    <link rel="stylesheet" type="text/CSS" href="nav-style.css" />
+    <script src="https://kit.fontawesome.com/0b19309c20.js" crossorigin="0b19309c20"></script>
+
+</head>
+<body>
+    <div id="nav-bar">
+        <div class="nav-button">
+           
+            <a class="nav-link" href="./home-page.html"> 
+                <i class="fa-solid fa-house nav-icons" id="home-icon"></i>
+                <h3 id="home-page-title" class="page-title">Home</h3>
+            </a> 
+            
+           
+                <a class="nav-link" href="./games-page.html"> 
+                    <i class="fa-solid fa-gamepad fa-lg nav-icons" id="games-icon"></i>
+                    <h3 id="games-page-title" class="page-title">Games</h3>
+               </a>
+               
+            <div id="nav-cart-page">
+                <i class="fa-solid fa-cart-shopping nav-icons" id="nav-cart-icon"></i>
+                <h3 id="cart-page-title" class="page-title">Cart</h3>
+            </div>
+        </div>
+    </div>
+    
+       
+        <div id="top-section">
+                <div id="hzd" class="game-card">
+                   <img class="game-pic" src="./games-pic/9zb3GbJG9h7AbP94R56l7DfqEpoBzljO.avif" alt="no image">
+                    <div id="buy">
+                        <h3 id="add-to-cart">add to cart</h3>
+                        <i class="icon" id="cart-icon"></i>
+                    </div>
+                </div>
+
+                <div id="#trailer-section">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CJ_GCPaKywg" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+        
+        </div>
+
+    <div id="mid-section">
+        <div class="info">
+         
+            <h1 class="game-name-title">God Of War</h1>
+
+            <div id="tags-section">
+                <h5 class="tags">single player </h5>
+                <h5 class="tags">RPG </h5>
+            </div>
+            
+            <p class="game-discription">
+                From Santa Monica Studio and creative director Cory Barlog comes a new beginning for one of gaming’s most recognizable icons. Living as a man outside the shadow of the gods, Kratos must adapt to unfamiliar lands, unexpected threats, and a second chance at being a father. Together with his son Atreus, the pair will venture into the brutal Norse wilds and fight to fulfill a deeply personal quest.
+            </p>
+            
+        </div>
+               
+    </div>
+
+    <div id="bottom-section">
+        <div class="ingame-pic-section">
+            <div class="big-pic-section"> 
+                <img class="big-pic" id="big-pic1" src="./in game pic/horizon pic1.jpg" alt="pic1">
+            </div>
+            <div class="samall-pic-section">
+                <img class="small-pic" id="small-pic1" src="./in game pic/horizon pic1.jpg" onclick="myFunction(this)" alt="pic1">
+                <img class="small-pic" id="small-pic2" src="./in game pic/horizon pic2.jpg" onclick="myFunction(this)" alt="pic2">
+                <img class="small-pic" id="small-pic3" src="./in game pic/horizon pic3.jpg" onclick="myFunction(this)" alt="pic3">
+            </div>
+        </div>
+    </div>
+
+        
+
+    <script>
+        function myFunction(smallImg){
+            var fullImg = document.querySelector("#big-pic1");
+            console.log(smallImg);
+            fullImg.src= smallImg.src;
+        }
+    </script>
+   
+</body>
+</html>

@@ -268,7 +268,7 @@ opacity: 1;
     }
 
     .game-card{
-        width: 90vw;
+        width: 80vw;
         height: auto;
         margin-right: 0px;
 
@@ -280,6 +280,10 @@ opacity: 1;
 
     h3{
         font-size: 1.17em;
+    }
+
+    .ingame-pic-section{
+        width: 85%;
     }
  }
 

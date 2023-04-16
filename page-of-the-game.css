@@ -47,9 +47,10 @@ box-sizing: border-box;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 35px;
     animation-name: top-section-animation;
     animation-duration: 2s;
-    margin-top: 35px;
+   
 }
 
 @keyframes top-section-animation{
@@ -62,6 +63,7 @@ box-sizing: border-box;
     }
  }
 
+ 
 #bottom-section{
    display: flex;
    justify-content: center;
@@ -103,8 +105,13 @@ iframe{
     padding: 5px;
     margin-left: 10px;
     width: fit-content;
-
+    animation-name: rotate-tag;
+    animation-duration: 2s;
  }
+
+ @keyframes rotate-tag {
+    50% {transform: rotate(180deg);}
+  }
 
  .tags:hover{
     background-color: rgb(164, 176, 200);
@@ -180,9 +187,8 @@ iframe{
         border-radius: 20px;
         border-style: solid;
         margin-right: 20px;
-        
-        
-   }
+       
+       }
 
    .game-price{
     margin: 0%;
@@ -198,6 +204,8 @@ iframe{
  #trailer-section{
     display: flex;
     justify-content: center;
+    animation-name: trailer-animation;
+    animation-duration: 2s;
  }
 #mid-section{
     display: flex;

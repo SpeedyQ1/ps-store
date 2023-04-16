@@ -20,6 +20,36 @@
        width: 100%;
     }
  }
+
+    .nav-link::before{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1.5px;
+    background: #ffffff;
+    content:"";
+    opacity: 1;
+    transition: 0.5s;
+ }
+
+    .nav-link::after{
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    width: 0px;
+    height: 1.5px;
+    background: #ffffff;
+    content:"";
+    opacity: 1;
+    transition: 0.5s;
+    margin-top: -1.5px;
+ }
+
+ .nav-link:hover::before , .nav-link:hover::after{
+    width: 100%;
+ }
+
  .nav-button{
      display: flex;
      justify-content: space-around;
@@ -42,6 +72,7 @@
      display: flex;
      align-items: center;
      cursor: pointer;
+     position: relative;
  }
  
   #cart-icon{

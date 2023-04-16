@@ -13,13 +13,20 @@ color: black;
     width: -webkit-fill-available; 
     object-fit: contain;
     overflow-clip-margin: content-box;
+    
   }
 
 
 #text{
     position: absolute;
-    color: white;
+    width: 100vw;
+    color: white;  
+    display: flex;
+    justify-content: center;
+    
 }
+
+
 
 #video-section{
     position: relative;
